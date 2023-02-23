@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisoscuro: #666;
+    --grisclaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+/* MOBILE VERSION */
+
+/* Header */
+
+.header {
+    background-color: var(--amarillo);
+}
+
+.header-top-bar {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 2rem 0;
+}
+
+.logo {
+    width: 45%;
+}
+
+.search{
+    background-color: white;
+    width: 45%;
+    align-self: center;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    color: var(--grisoscuro);
+    height: 33px;
+    padding: 4px;
+    border: var(--grisclaro);
+    font-size: 14px;
+    justify-content: flex-end;
+}
+
+.searh form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.buscador{
+    width: 100%;
+    display: inline;
+    font-size: 13px;
+    border: none;
+}
+
+.buscador input {
+    width: 100%;
+}
+
+.fa-magnifying-glass{
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+}
+
+.texto-inicial {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.texto-inicial div{
+    display: inline;
+}
+
+.header-nav-bar {
+    display: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.burger-menu {
+    padding-bottom: 1rem;
+    color: white;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    margin: auto; 
+}
+
+.burger-menu i{
+    padding: 0.5rem;
+    border-radius: 15%;
+    background-color: var(--azul);
+}
+
+.banner img{
+    display: flex;
+    width: 100vw;
+}
+
+/* BODY MOBILE VERSION */
+
+main{
+    background-color: var(--grisclaro);
+}
+
+.caja-main {
+    width: 90%;
+    margin: auto;
+}
+
+.titular-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titular-2{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+
+.titulares-main {
+    font-size: 24px;
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.articulo {
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+.imagenes{
+    width: 100%;
+    margin: auto;
+    vertical-align: top;
+}
+
+.descripcion-articulo{
+    background-color: white;
+    border-top: 1px solid var(--grisclaro);
+    position:relative;
+    padding: 1rem;
+}
+
+.descripcion-articulo i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: var(--verde);
+    border: 1px solid var(--verde);
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 80px;
+    top: -15px;
+    transition:
+        ease-out transform .5s,
+        ease-out right .5s;
+}
+
+.articulo:hover .descripcion-articulo i{
+    transform: rotateZ(360deg);
+    right: 20px;
+}
+
+.precio-descuento{
+    display: flex;
+}
+
+.precio {
+    font-size: 18px;
+    padding-right: 0.5rem;
+}
+
+.descuento {
+    font-size: 16px;
+    color: var(--verde);
+}
+
+.descripciones {
+    display: none;
+}
+
+.articulo:hover .descripciones {
+    display: block;
+    padding-top: 1rem;
+}
+
+/* REGISTER FORM MOBILE VERSION */
+
+.main {
+    background-color: var(--grisclaro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0;
+}
+
+.formulario-registro {
+    width: 70%;
+    margin: 1rem 0;
+}
+
+.formulario-campo{
+    display: block;
+    margin-bottom: 2rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.formulario-campo input{
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem 0;
+}
+
+.fecha-nacimiento{
+    margin-bottom: 2rem;
+}
+
+.fecha-nacimiento label h2 {
+    margin-bottom: 1rem;
+}
+
+.fecha-nacimiento input{
+    background-color: white;
+    border-radius: 4px;
+}
+
+.preferencias-usuario{
+    margin-bottom: 2rem;
+}
+
+.preferencias-usuario label h2 {
+    margin-bottom: 1rem;
+}
+
+.intereses {
+    margin-bottom: 2rem;
+}
+
+.seleccion-multiple{
+    display: flex;
+    flex-direction: column;
+}
+
+.seleccion-multiple div input{
+    display: inline;
+    margin: 1rem;
+}
+
+.profile-picture {
+    margin-bottom: 2rem;
+}
+
+.profile-picture input{
+    margin-top: 1rem;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-registro, .boton-borrar{
+    width: 45%;
+}
+
+.boton-registro button, .boton-borrar button{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--azul);
+    border-radius: 4px;
+    color: white;
+}
+
+.boton-registro:hover button, .boton-borrar:hover button{
+    background-color: var(--celeste);
+    cursor: pointer;
+}
+
+input{
+    display: block;
+}
+
+
+/* FORMULARIO DE LOGIN MOBILE VERSION*/
+
+.main{
+    background-color: var(--grisclaro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 25px;
+}
+
+.login-crear {
+    width: 70%;
+    margin: 1rem 0;
+}
+
+.login-control{
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.login-control input {
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem 0;
+    border: none;
+}
+
+.boton-enviar-login button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--azul);
+    border-radius: 4px;
+    color: white;
+}
+
+.boton-enviar-login:hover button{
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+.input {
+    display: block;
+}
+
+/* FOOTER MOBILE VERSION */
+
+footer{
+    background-color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-section {
+    padding: 2rem 3rem;
+    text-align: center;
+    max-width: 30rem;
+}
+
+.footer-section .fa-solid {
+    color: var(--celeste);
+    font-size: 2em;
+    padding-bottom: 0.625 rem;
+}
+
+.footer-section .fa-solid:hover {
+    color: #EAC926;
+}
+
+.copyright {
+    font-size: 12px;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+/* TABLET VERSION */
+
+@media (min-width: 400px){
+    .logo { 
+        width: 30%;
+    }
+
+    .search {
+        width: 30%;
+    }
+
+    .texto-inicial{
+        width: 30%;
+        padding: 0; 
+        display: flex;
+        align-items: center;
+    }
+
+    .burger-menu {
+        display: none;         
+    }
+ 
+    .header-nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1.5rem;
+     }
+
+     .nav-bar{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+     }
+
+    /* BODY TABLET VERSION */
+
+    .titular-1, .titular-2 {
+        justify-content: space-between;
+    }
+
+    .articulo{
+        width: 45%;
+    }
+
+    .articulo:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .precio{
+        font-size: 0.8rem;
+    }
+}
+
+/* DESKTOP VERSION*/
+
+@media (min-width: 769px){
+
+    /* BODY DESKTOP */
+
+    .articulo {
+        width: 23%;      
+    }
+
+    /* Formulario de REGISTRO */
+
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 15px;  
+}
+
+}
+
